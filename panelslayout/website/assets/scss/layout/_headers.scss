@@ -1,0 +1,122 @@
+// _header.scss
+@use '../abstracts/variables' as var;
+
+header.main-header {
+  background-color: var.$white-color;
+  padding: 0.25rem 0 0.25rem 0;
+}
+header.main-header.landing-page {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 10;
+  padding: 1rem 0 0.75rem 0;
+  color: var.$white-color;
+  a.navbar-brand {
+    color: var.$white-color;
+    &:hover {
+      color: var.$white-color;
+    }
+  }
+  .navigation-bar {
+    .navbar-nav{
+      .nav-item {
+        .nav-link {
+          color: var.$white-color;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+a.navbar-brand {
+  color: var.$text-gray-color;
+  &:hover {
+    color: var.$text-gray-color;
+  }
+}
+.navigation-bar {
+  .navbar-nav{
+    .nav-item {
+      .nav-link {
+        color: var.$text-gray-color;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  min-width: auto;
+  width: 130px;
+  font-size: 85%;
+  padding: 0.25rem 0;
+}
+
+.dropdown-divider {
+  margin: 0.25rem 0;
+}
+
+  @media (max-width: 992px) {
+    .navigation-bar {
+      .navbar-nav{
+        .nav-item {
+          .nav-link {
+            color: var.$white-color;
+          }
+        }
+      }
+    }
+}
+
+.truncate-text {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.loggedin-user-name {
+  color: var.$btn-rounded-color !important;
+  border-color: var.$btn-rounded-color !important;
+
+  &:hover {
+    color: var.$btn-rounded-color;
+    border-color: var.$btn-rounded-color;
+  }
+}
+
+.breadcrumb {
+  --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' fill='currentColor' class='bi bi-chevron-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/%3E%3C/svg%3E");
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 20px;
+  }
+
+  .breadcrumb-item {
+    font-size: 0.75rem;
+  }
+
+  .breadcrumb-item.active{
+    color: var.$border-color;
+  }
+}
+
+@media (max-width: 992px) { 
+  .navigation-bar {
+    background-color: var.$primary-color;
+  }
+  
+  a.nav-link.loggedin-user-name {
+    color: white !important;
+  }
+  .navbar-toggler-icon {
+    color: white !important;
+  }
+  .dropdown-menu-end[data-bs-popper] {
+    right: auto;
+    left: 0;
+  }
+}

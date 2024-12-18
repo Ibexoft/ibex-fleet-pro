@@ -1,0 +1,19 @@
+// _typography.scss
+@use '../abstracts/variables' as var;
+
+body {
+  font-family: var.$font-r1;
+  line-height: 1.6;
+  font-size: 85%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  color: var.$text-gray-color
+}
+

@@ -1,0 +1,13 @@
+// _navbar.scss
+@use '../abstracts/variables' as var;
+
+.navbar {
+//   @include flex-center;
+  background-color: var.$primary-color;
+  padding: 10px;
+
+  .navbar__item {
+    margin: 0 15px;
+    color: #fff;
+  }
+}

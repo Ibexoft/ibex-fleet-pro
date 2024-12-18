@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as var;
+@import "../abstracts/mixins";
+
+.gray-background{
+    background-color: var.$grey-color;
+}
+
+.icon-text{
+    font-size: .7rem !important;
+    text-transform: uppercase;
+}
+
+.price-wrapper {
+    height: 100%;
+    min-height: 150px !important;
+    background-color: #9c979714;
+}
+
+.filter-checkbox{
+    color: var.$text-gray-color;
+    font-size: 85%;
+
+    input[type="checkbox"]:checked + & {
+        color: var.$black-color;
+        font-weight: 500;
+      }
+}

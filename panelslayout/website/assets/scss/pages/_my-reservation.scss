@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as var;
+
+.reservation-card {
+	.total-price {
+        font-size: 2.5rem;
+	}
+    .mt-n3 {
+        margin-top: -0.25rem !important;
+    }
+
+    #info-col {
+        border-right:  1px solid #dee2e6;
+        border-left:  1px solid #dee2e6;
+    }
+
+    .reservation-code {
+        background-color: var.$primary-color;
+        font-size: 0.75rem;
+    }
+    .super-text {
+        font-size: 1.5rem;
+    }
+    .vehicle-color {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-bottom: -2px;
+        background-color: var.$white-color;
+    }
+    .car-image {
+        width: 10em;
+    }
+    @media (max-width: 992px) {
+        #info-col {
+            border: none;
+            border-bottom:  1px solid #dee2e6;
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .reservation-card {
+        .total-price {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .reservation-card {
+        .total-price {
+            font-size: 3rem;
+        }
+    }
+}

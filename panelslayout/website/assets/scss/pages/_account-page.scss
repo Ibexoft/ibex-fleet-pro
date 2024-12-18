@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as var;
+
+.account-update-btn {
+	background-color: var.$primary-color;
+	font-size: 0.75rem;
+	padding: 10px 60px;
+}
+.account-profile-card {
+	background-color: var.$primary-color;
+    li {
+        &:hover {
+            background-color: darken(var.$primary-color, 10%);
+            color: white;
+        }
+        &.active {
+            color: var.$primary-color;
+            background-color: white;
+        }
+    }
+    .name-initials-container {
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+    }
+}

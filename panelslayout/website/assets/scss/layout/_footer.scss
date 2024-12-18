@@ -1,0 +1,9 @@
+// _footer.scss
+@use '../abstracts/variables' as var;
+
+.footer {
+  background-color: darken(var.$primary-color, 20%);
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}

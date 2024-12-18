@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as var;
+
+.login-register-container {
+    color: var.$text-gray-color;
+}
+
+.input-label, .sub-text {
+	font-size: 0.75rem;
+}
+.login-reg-submit-btn {
+	background-color: var.$primary-color;
+	font-size: 0.75rem;
+	padding: 10px 60px;
+	border-radius: 2px;
+}
+.nsm7Bb-HzV7m-LgbsSe-BPrWId {
+	line-height: 1.6;
+}

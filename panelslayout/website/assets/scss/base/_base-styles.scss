@@ -1,0 +1,19 @@
+// _base.scss
+@use '../abstracts/variables' as var;
+
+body {
+  background-color: var.$grey-color;
+}
+
+a {
+  text-decoration: none;
+  color: var.$primary-color;
+
+  &:hover {
+    color: darken(var.$primary-color, 10%);
+  }
+}
+
+ul {
+	list-style: none;
+}
